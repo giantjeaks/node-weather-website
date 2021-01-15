@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
-const myName = 'Alancx Srisamutr'
+const myName = 'Owm Alancx'
 
 // Setuo handlebars engine and views location
 app.set('view engine','hbs')
