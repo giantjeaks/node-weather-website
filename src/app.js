@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
+const myName = 'Alancx Srisamutr'
 
 // Setuo handlebars engine and views location
 app.set('view engine','hbs')
@@ -23,14 +24,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('',(req,res) => {
     res.render('index',{
         title: 'Weather',
-        name: 'Alang Sri'
+        name: myName
     })
 })
 
 app.get('/about',(req,res) => {
     res.render('about',{
         title: 'About Me',
-        name: 'Alang Sri'
+        name: myName
     })
 })
 
@@ -39,7 +40,7 @@ app.get('/help',(req,res) => {
     res.render('help',{
         title: 'Help',
         helpText: 'Example message',
-        name:'Alang Sri'
+        name: myName
     })
 })
 
